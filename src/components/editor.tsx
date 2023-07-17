@@ -39,7 +39,7 @@ export const Editor = (props: Props) => {
 
   return (
     <div className="prose prose-stone dark:prose-invert">
-      <div id="editor" className="min-h-[500px]"></div>
+      <div id="editor" className="min-h-[500px] xl:ml-4"></div>
     </div>
   )
 }
