@@ -34,7 +34,7 @@ export const EditorOutput = ({ data }: Props) => {
 
   return (
     <div className="prose prose-stone dark:prose-invert">
-      <Output style={style} className="text-sm" renderers={renderers} data={data} />
+      <Output style={style} renderers={renderers} data={data} />
     </div>
   )
 }
