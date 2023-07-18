@@ -2,6 +2,8 @@
 
 import Prism from 'prismjs'
 import 'prismjs/themes/prism-tomorrow.min.css'
+import 'prismjs/components/prism-jsx'
+import 'prismjs/components/prism-python'
 import { useEffect, useMemo } from 'react'
 
 type Props = {
