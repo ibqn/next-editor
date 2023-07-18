@@ -3,7 +3,11 @@
 import Prism from 'prismjs'
 import 'prismjs/themes/prism-tomorrow.min.css'
 import 'prismjs/components/prism-jsx'
-import 'prismjs/components/prism-python'
+import 'prismjs/components/prism-typescript'
+
+// import 'prismjs/plugins/autoloader/prism-autoloader'
+// Prism.plugins.autoloader.languages_path = '/prism/'
+
 import { useEffect, useMemo } from 'react'
 
 type Props = {
@@ -40,7 +44,7 @@ export const CodeRenderer = ({ data: { code } }: Props) => {
 
   return (
     <pre>
-      <code className={`!text-sm language-${language}`}>{codeSnippet}</code>
+      <code className={`autoloader !text-sm language-${language}`}>{codeSnippet}</code>
     </pre>
   )
 }
