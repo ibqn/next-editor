@@ -29,7 +29,7 @@ export default function Home() {
         <h1 className="text-3xl font-semibold">Editor</h1>
         <div className="flex flex-col gap-6 rounded-md border p-2">
           <Editor data={data} onChange={setData} />
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 xl:ml-4">
             Use <kbd className="bg-muted rounded-md border px-1 text-xs uppercase">Tab</kbd> to open the command menu.
           </p>
         </div>
